@@ -27,7 +27,7 @@ const ENTRIES: Entry[] = [
 
 const ROW_HEIGHT = 64;
 
-export function Education(): ReactNode {
+export function Publics(): ReactNode {
   return (
     <div className="flex flex-col gap-3">
       <h3 className="text-foreground text-[15px] font-semibold tracking-tight">
