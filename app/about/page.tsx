@@ -2,7 +2,7 @@ import { Education } from "@/components/about/education";
 import { Experience } from "@/components/about/experience";
 import { PolaroidStrip } from "@/components/about/polaroid-strip";
 import { Skills } from "@/components/about/skills";
-import { Publications } from "@/components/about/publications";
+import { Publics } from "@/components/about/publications";
 import { ContactCard } from "@/components/contact/contact-card";
 import { FadeIn } from "@/components/ui/motion-primitives";
 import { createMetadata } from "@/lib/metadata";
@@ -49,7 +49,7 @@ export default function AboutPage(): ReactNode {
             <Experience />
             <Education />
             <Skills />
-            <Publications />
+            <Publics />
           </div>
         </FadeIn>
       </section>
