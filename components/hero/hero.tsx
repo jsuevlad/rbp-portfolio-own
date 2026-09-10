@@ -41,7 +41,7 @@ export function Hero(): ReactNode {
                 <img
                   src={PORTRAIT_SRC}
                   alt="Josh portrait"
-                  className="h-full w-full object-cover"
+                  className="absolute inset-0 h-full w-full object-cover"
                 />
               </div>
             </div>
