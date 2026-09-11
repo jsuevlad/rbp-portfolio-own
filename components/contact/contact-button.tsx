@@ -12,7 +12,14 @@ export function ContactButton(): ReactNode {
   const [open, setOpen] = useState(false);
   const [copied, setCopied] = useState(false);
 
-  const handleCopy = async (): Promise<void> => {
+  const handleCopy = async (e: React.MouseEvent): Promise<void> => {
+     // Si no está abierto, el primer toque solo expande el componente
+    if (!open) {
+      setOpen(true);
+      return;
+    }
+    // Si ya está abierto, copia el correo al portapapeles
+    e.stopPropagation();
     try {
       await navigator.clipboard.writeText(EMAIL);
       setCopied(true);
@@ -40,6 +47,7 @@ export function ContactButton(): ReactNode {
       onClick={handleCopy}
       onHoverStart={() => setOpen(true)}
       onHoverEnd={() => setOpen(false)}
+      aria-label={...}
       onFocus={() => setOpen(true)}
       onBlur={() => setOpen(false)}
       aria-label={
