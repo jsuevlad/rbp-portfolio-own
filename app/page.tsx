@@ -1,6 +1,6 @@
-import { ContactCard } from "@/components/contact/contact-card";
-import { Hero } from "@/components/hero/hero";
-import { Projects } from "@/components/projects/projects";
+import { ContactCard } from "@/works/contact/contact-card";
+import { Hero } from "@/works/hero/hero";
+import { Projects } from "@/works/projects/projects";
 import { createMetadata, siteConfig } from "@/lib/metadata";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
