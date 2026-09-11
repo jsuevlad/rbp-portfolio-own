@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { GraduationCap } from 'lucide-react';
 
 type Entry = {
   school: string;
@@ -61,7 +62,6 @@ export function Education(): ReactNode {
 }
 
 function SchoolLogo({ entry }: { entry: Entry }): ReactNode {
-  const initials = entry.school.charAt(0);
   return (
     <span
       className="border-foreground/15 inline-flex h-12 w-12 shrink-0 items-center justify-center border"
@@ -78,9 +78,8 @@ function SchoolLogo({ entry }: { entry: Entry }): ReactNode {
           draggable={false}
         />
       ) : (
-        <span className="text-foreground/60 text-[18px] font-semibold tracking-tight">
-          {initials}
-        </span>
+        <GraduationCap className="h-5 w-5 stroke-[2]" />
+     </span>
       )}
     </span>
   );
