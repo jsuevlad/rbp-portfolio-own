@@ -23,7 +23,7 @@ export function Hero(): ReactNode {
             </h1>
 
             <p className="max-w-[34ch] text-[22px] leading-[1.4] tracking-tight text-foreground/65">
-              Working at the intersection of ideas, design, and technology, I turn complexity into meaning.
+              Working at the intersection of ideas, design, and technology. I turn complexity into meaning.
             </p>
 
             <HeroCtas />
