@@ -21,7 +21,7 @@ type NavItem = {
 
 const NAV_ITEMS: readonly NavItem[] = [
   { label: "Home", href: "/" },
-  { label: "Projects", href: "/projects" },
+  { label: "Works", href: "/works" },
   { label: "About", href: "/about" },
 ];
 
@@ -89,7 +89,7 @@ function NavThemeToggle(): ReactNode {
           : "Toggle theme"
       }
       aria-pressed={mounted ? isDark : undefined}
-      className="focus-ring relative inline-flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-white/10 dark:bg-white/5 ring-1 ring-white/20 dark:ring-white/10 transition-colors hover:bg-white/20 dark:hover:bg-white/10"
+      className="focus-ring relative inline-flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-white/10 dark:bg-white/5 ring-1 ring-white/20 dark:ring-white/10 transition-colo[...]
     >
       <span aria-hidden="true" className="relative h-4 w-4">
         <Sun
