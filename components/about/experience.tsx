@@ -187,7 +187,7 @@ function CompanyLogo({ entry }: { entry: Entry }): ReactNode {
           draggable={false}
         />
       ) : (
-        <IdCardLanyard className="h-5 w-5 stroke-[2]" />
+        <IdCardLanyard className="h-6 w-6 stroke-[2]" />
       )}
     </span>
   );
