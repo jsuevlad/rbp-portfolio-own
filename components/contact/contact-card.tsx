@@ -1,4 +1,3 @@
-import { Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
@@ -83,12 +82,10 @@ export function ContactCard(): ReactNode {
 function SocialIcon({
   href,
   label,
-  lucideIcon: LucideIcon,
   imageSrc,
 }: {
   href: string;
   label: string;
-  lucideIcon?: React.ComponentType<{ className?: string; strokeWidth?: number }>;
   imageSrc?: string;
 }): ReactNode {
   const isExternal = href.startsWith("http");
@@ -102,9 +99,7 @@ function SocialIcon({
       className= "border-white/10 bg-background/60 backdrop-blur-md shadow-inner transition-all duration-300 ease-out hover:border-white/20 hover:bg-background/80 active:scale-95 inline-flex h-11 w-11 items-center justify-center rounded-2xl text-foreground/70"
       {...props}
     >
-      {LucideIcon ? (
-        <LucideIcon className="h-4 w-4" strokeWidth={2.5} aria-hidden="true" />
-      ) : imageSrc ? (
+      {imageSrc ? (
         <Image
           src={imageSrc}
           alt=""
