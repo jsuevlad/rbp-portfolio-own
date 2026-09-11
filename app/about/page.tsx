@@ -25,7 +25,7 @@ export default function AboutPage(): ReactNode {
             </h1>
             <div className="mt-8 space-y-6 text-[17px] leading-[1.7] tracking-tight text-foreground/75 sm:text-[18px]">
               <p>
-                A <strong className="font-semibold text-foreground">product designer and frontend engineer</strong> passionate about building intuitive, human-centered digital experiences. With a background in <strong className="font-semibold text-foreground">visual craft</strong> and <strong className="font-semibold text-foreground">interaction design</strong>, I bring a unique blend of design thinking and technical execution to every project.
+                I work where <strong className="font-semibold text-foreground">design, technology, and ideas meet.</strong> My journey began in <strong className="font-semibold text-foreground">digital communication,</strong> eventually expanding into <strong className="font-semibold text-foreground">visual design, digital experiences, and creative problem-solving</strong> — bringing together curiosity, experimentation, and technical execution in every project.
               </p>
               <p>
                 My journey into design began when I realized how often good user experience was missing from powerful tools. That led me to embrace <strong className="font-semibold text-foreground">user-centered design</strong> as both a mindset and a craft, one that balances clarity, creativity, and functionality.
