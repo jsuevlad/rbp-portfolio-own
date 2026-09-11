@@ -41,6 +41,13 @@ const ENTRIES: Entry[] = [
     icon: "invest", // <-- Otro icono distinto para este elemento
     brand: "#104B84",
   },
+  {
+    company: "Systems of the future",
+    role: "Startup Ecosystem",
+    period: "2025 - Present",
+    icon: "idea",
+    brand: "#F5F2E8",
+  },
 ];
 
 const COLLAPSED_COUNT = 2.5;
