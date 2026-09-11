@@ -10,6 +10,9 @@ import { ShaderFlow } from "../shaders/shader-flow";
 const CARD_FADE_MASK =
   "radial-gradient(ellipse 90% 110% at 50% 50%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.92) 40%, rgba(0,0,0,0.7) 70%, rgba(0,0,0,0.4) 90%, rgba(0,0,0,0.15) 100%)";
 
+const SOCIAL_FADE_MASK =
+  "radial-gradient(ellipse 80% 100% at 50% 50%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.95) 35%, rgba(0,0,0,0.8) 60%, rgba(0,0,0,0.5) 85%, rgba(0,0,0,0.2) 100%)";
+
 export function ContactCard(): ReactNode {
   return (
     <section className="mx-auto my-12 w-full max-w-275 px-6 sm:my-20 sm:px-10">
@@ -39,8 +42,19 @@ export function ContactCard(): ReactNode {
                 <ContactCardCtas />
               </div>
 
-              <div className="border-foreground/8 flex flex-col items-center justify-center gap-6 rounded-[1.1rem] border bg-background p-6 sm:p-8">
-                <div className="flex items-center gap-3 opacity-75">
+              <div className="border-foreground/8 relative flex flex-col items-center justify-center gap-6 rounded-[1.1rem] border bg-background p-6 sm:p-8 overflow-hidden">
+                <div
+                  aria-hidden="true"
+                  className="pointer-events-none absolute inset-0 opacity-35 dark:opacity-20"
+                  style={{
+                    WebkitMaskImage: SOCIAL_FADE_MASK,
+                    maskImage: SOCIAL_FADE_MASK,
+                  }}
+                >
+                  <ShaderFlow scale={2.5} brightness={2.5}/>
+                </div>
+
+                <div className="relative flex items-center gap-3 opacity-75 z-10">
                   <SocialIcon
                     href="mailto:hello@example.com"
                     label="Email"
@@ -57,7 +71,7 @@ export function ContactCard(): ReactNode {
                     imageSrc="/x.svg"
                   />
                 </div>
-                <div className="flex flex-col items-center gap-1 text-center">
+                <div className="relative flex flex-col items-center gap-1 text-center z-10">
                   <p className="text-[13px] tracking-tight text-foreground/70">
                     2026 &copy; All rights reserved. 
                   </p>
@@ -93,7 +107,7 @@ function SocialIcon({
     <Link
       href={href}
       aria-label={label}
-      className="border-foreground/8 hover:border-foreground/15 focus-ring inline-flex h-11 w-11 items-center justify-center rounded-xl border bg-background text-foreground/70 transition-colors hover:text-foreground"
+      className="border-foreground/8 hover:border-foreground/15 focus-ring inline-flex h-11 w-11 items-center justify-center rounded-xl border bg-background text-foreground/70 transition-colors hover:[...]
       {...props}
     >
       {LucideIcon ? (
