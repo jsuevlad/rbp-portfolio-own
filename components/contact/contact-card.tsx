@@ -44,19 +44,23 @@ export function ContactCard(): ReactNode {
                 <div className="relative flex items-center gap-3 opacity-75 z-10">
                   <SocialIcon
                     href="mailto:hello@example.com"
-                    label="Email"
-                    lucideIcon={Mail}
+                    label="E-mail"
+                    imageSrc="/gmail.svg"
                   />
                   <SocialIcon
-                    href="https://www.linkedin.com"
-                    label="LinkedIn"
-                    imageSrc="/linkedin.svg"
+                    href="https://t.me/julesolenne"
+                    label="Telegram"
+                    imageSrc="/telegram.svg"
                   />
                   <SocialIcon
-                    href="https://x.com"
-                    label="X"
-                    imageSrc="/x.svg"
+                    href="https://www.instagram.com/julesolenne/"
+                    label="Instagram"
+                    imageSrc="/instagram.svg"
                   />
+                  <SocialIcon
+                    href="https://github.com/julesolenne/"
+                    label="GitHub"
+                    imageSrc="/github.svg"
                 </div>
                 <div className="relative flex flex-col items-center gap-1 text-center z-10">
                   <p className="text-[13px] tracking-tight text-foreground/70">
