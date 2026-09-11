@@ -79,7 +79,6 @@ function SchoolLogo({ entry }: { entry: Entry }): ReactNode {
         />
       ) : (
         <GraduationCap className="h-5 w-5 stroke-[2]" />
-     </span>
       )}
     </span>
   );
