@@ -25,13 +25,13 @@ export default function ProfilePage(): ReactNode {
             </h1>
             <div className="mt-8 space-y-6 text-[17px] leading-[1.7] tracking-tight text-foreground/75 sm:text-[18px]">
               <p>
-                I work where <strong className="font-semibold text-foreground">design, technology, and ideas meet.</strong> My journey began in <strong className="font-semibold text-foreground">di[...]
+                I work where <strong className="font-semibold text-foreground">design, technology, and ideas meet</strong>.
               </p>
               <p>
-                As my work moved from digital communication into design, I became increasingly interested in <strong className="font-semibold text-foreground">the relationship between people, idea[...]
+                As my work moved from digital communication into design, I became increasingly interested in.
               </p>
               <p>
-                Today, <strong className="font-semibold text-foreground">I'm drawn to initiatives that push boundaries and challenge status quos.</strong> I&rsquo;m always looking for opportunitie[...]
+                Today,
               </p>
             </div>
           </div>
