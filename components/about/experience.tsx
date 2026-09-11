@@ -1,6 +1,7 @@
 "use client";
 
 import { ChevronDown } from "lucide-react";
+import { IdCardLanyard } from 'lucide-react';
 import { AnimatePresence, motion } from "motion/react";
 import { useState, type ReactNode } from "react";
 
@@ -167,7 +168,6 @@ export function Experience(): ReactNode {
 }
 
 function CompanyLogo({ entry }: { entry: Entry }): ReactNode {
-  const initials = entry.company.charAt(0);
   return (
     <span
       className="ring-foreground/8 inline-flex h-12 w-12 shrink-0 items-center justify-center bg-white ring-1 dark:ring-white/10"
@@ -187,9 +187,7 @@ function CompanyLogo({ entry }: { entry: Entry }): ReactNode {
           draggable={false}
         />
       ) : (
-        <span className="text-[18px] font-semibold tracking-tight text-white">
-          {initials}
-        </span>
+        <IdCardLanyard className="h-5 w-5 stroke-[2]" />
       )}
     </span>
   );
