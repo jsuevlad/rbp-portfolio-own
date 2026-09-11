@@ -28,25 +28,18 @@ type Entry = {
 
 const ENTRIES: Entry[] = [
   {
-    company: "Academic Journal",
-    role: "Peer-reviewed Research Paper",
-    period: "2025",
-    icon: "book", // <-- Aquí eliges explícitamente el icono
-    brand: "#3B82F6",
+    company: "The MERA Framework: Adaptive Rules and Trust",
+    role: "Review Article Proposal",
+    period: "In progress",
+    icon: "invest", // <-- Aquí eliges explícitamente el icono
+    brand: "#5895CF",
   },
   {
-    company: "Tech Publication",
-    role: "Guest Author & Articles",
-    period: "2024",
-    icon: "news", // <-- Otro icono distinto para este elemento
-    brand: "#10B981",
-  },
-  {
-    company: "Linear", // Si tiene slug, seguirá cargando el logo de Simple Icons
-    role: "Senior Design Engineer",
-    period: "Mar 2024 – Present",
-    slug: "linear",
-    brand: "#5E6AD2",
+    company: "Organizational Viability and Efficiency",
+    role: "Economic research proposal",
+    period: "In progress",
+    icon: "invest", // <-- Otro icono distinto para este elemento
+    brand: "#104B84",
   },
 ];
 
