@@ -47,11 +47,8 @@ export function ContactButton(): ReactNode {
       onClick={handleCopy}
       onHoverStart={() => setOpen(true)}
       onHoverEnd={() => setOpen(false)}
-      aria-label={...}
-      onFocus={() => setOpen(true)}
-      onBlur={() => setOpen(false)}
       aria-label={
-        copied ? "Email copied" : open ? `Copy ${EMAIL}` : "Show email"
+        copied ? "E-mail copied" : open ? `Copy ${EMAIL}` : "Show email"
       }
       transition={{ layout: { duration: 0.55, ease: EASE } }}
       style={{ borderRadius: 12 }}
