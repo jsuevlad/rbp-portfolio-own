@@ -64,10 +64,10 @@ export function ContactCard(): ReactNode {
                 </div>
                 <div className="relative flex flex-col items-center gap-1 text-center z-10">
                   <p className="text-[13px] tracking-tight text-foreground/70">
-                    2026 &copy; All rights reserved. 
+                    Elsewhere. One click away.
                   </p>
                   <p className="text-[12px] tracking-tight text-foreground/45">
-                    By Jules Hidde.
+                    &copy; Jules Hidde.
                   </p>
                 </div>
               </div>
