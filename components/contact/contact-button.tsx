@@ -80,7 +80,7 @@ export function ContactButton(): ReactNode {
                       transition={{ duration: 0.2, ease: EASE }}
                       className="inline-flex"
                     >
-                      <Check className="h-4 w-4" aria-hidden="true" />
+                      <CircleCheckBig className="h-4 w-4" aria-hidden="true" />
                     </motion.span>
                   ) : (
                     <motion.span
@@ -108,7 +108,7 @@ export function ContactButton(): ReactNode {
               transition={{ duration: 0.35, ease: EASE }}
               className="inline-flex items-center gap-2 whitespace-nowrap"
             >
-              <Mail className="h-4 w-4 shrink-0" aria-hidden="true" />
+              <BriefcaseBusiness className="h-4 w-4 shrink-0" aria-hidden="true" />
               <span>Work With Me</span>
             </motion.span>
           )}
