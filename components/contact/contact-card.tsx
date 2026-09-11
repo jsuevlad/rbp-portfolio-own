@@ -19,10 +19,6 @@ export function ContactCard(): ReactNode {
             <div
               aria-hidden="true"
               className="pointer-events-none absolute inset-0 opacity-45 dark:opacity-25"
-              style={{
-                WebkitMaskImage: CARD_FADE_MASK,
-                maskImage: CARD_FADE_MASK,
-              }}
             >
               <ShaderFlow scale={3} brightness={3}/>
             </div>
