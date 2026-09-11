@@ -61,6 +61,7 @@ export function ContactCard(): ReactNode {
                     href="https://github.com/julesolenne/"
                     label="GitHub"
                     imageSrc="/github.svg"
+                  />
                 </div>
                 <div className="relative flex flex-col items-center gap-1 text-center z-10">
                   <p className="text-[13px] tracking-tight text-foreground/70">
