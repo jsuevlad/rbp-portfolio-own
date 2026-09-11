@@ -19,11 +19,11 @@ export function Hero(): ReactNode {
               <span className="block whitespace-nowrap">
                 Artist, Designer &
               </span>
-              <span className="block whitespace-nowrap">Multidisciplinary Creator.</span>
+              <span className="block whitespace-nowrap">Polymath Creator.</span>
             </h1>
 
             <p className="max-w-[34ch] text-[22px] leading-[1.4] tracking-tight text-foreground/65">
-              I explore the space between ideas, design, and technology — turning complexity into meaningful things.
+              Working at the intersection of ideas, design, and technology, I turn complexity into meaning.
             </p>
 
             <HeroCtas />
