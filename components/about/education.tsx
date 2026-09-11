@@ -10,19 +10,19 @@ type Entry = {
 
 const ENTRIES: Entry[] = [
   {
-    school: "Rhode Island School of Design",
-    degree: "BFA, Graphic Design",
-    period: "2013 – 2017",
+    school: "Instituto Politécnico Nacional",
+    degree: "MBA in Sustainable Management",
+    period: "Aug. 2027 – Jun. 2029",
   },
   {
-    school: "Stanford University",
-    degree: "HCI Certificate, d.school",
-    period: "2018",
+    school: "Universidad Utel",
+    degree: "B.S. in Communication",
+    period: "Jan. 2020 - Jun. 2022",
   },
   {
-    school: "Bruno Simon's Three.js Journey",
-    degree: "WebGL & Shaders",
-    period: "2022",
+    school: "Colegio Nicolas Bravo",
+    degree: "HS Diploma, Exact Sciences",
+    period: "Aug. 2016 - Jun. 2019",
   },
 ];
 
@@ -32,7 +32,7 @@ export function Education(): ReactNode {
   return (
     <div className="flex flex-col gap-3">
       <h3 className="text-foreground text-[15px] font-semibold tracking-tight">
-        Education
+       Where I've Learned:
       </h3>
       <div className="border-foreground/5 bg-foreground/2 dark:bg-foreground/5 relative rounded-4xl border p-2 sm:p-4">
         <ul className="flex flex-col gap-2">
