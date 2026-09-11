@@ -107,13 +107,7 @@ function SocialIcon({
     <Link
       href={href}
       aria-label={label}
-      className={
-        border-white/10 bg-background/60 backdrop-blur-md
-        shadow-inner transition-all duration-300 ease-out
-        hover:border-white/20 hover:bg-background/80
-        active:scale-95 inline-flex h-11 w-11 
-        items-center justify-center rounded-2xl text-foreground/70
-      }
+      className= "border-white/10 bg-background/60 backdrop-blur-md shadow-inner transition-all duration-300 ease-out hover:border-white/20 hover:bg-background/80 active:scale-95 inline-flex h-11 w-11 items-center justify-center rounded-2xl text-foreground/70"
       {...props}
     >
       {LucideIcon ? (
