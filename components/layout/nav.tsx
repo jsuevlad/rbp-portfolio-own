@@ -154,7 +154,8 @@ export function Nav(): ReactNode {
       aria-label="Primary"
       className="fixed left-1/2 top-6 z-50 -translate-x-1/2"
     >
-      <div className="flex items-center gap-1 rounded-full bg-background p-1.5 shadow-sm border border-foreground/8">
+      <div className="relative flex items-center gap-1 rounded-full bg-white/10 dark:bg-white/5 p-1.5 shadow-lg backdrop-blur-md border border-white/20 dark:border-white/10">
+        <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white/5 to-white/0 dark:from-white/2 dark:to-transparent pointer-events-none" />
         <ul ref={listRef} className="relative flex items-center gap-1">
           {pillRect && (
             <motion.span
@@ -167,7 +168,7 @@ export function Nav(): ReactNode {
                   : { duration: 0 }
               }
               style={{ left: 0, top: 0, bottom: 0 }}
-              className="absolute rounded-full bg-foreground/5 ring-1 ring-foreground/8"
+              className="absolute rounded-full bg-white/10 dark:bg-white/5 ring-1 ring-white/20 dark:ring-white/10"
             />
           )}
           {NAV_ITEMS.map((item, index) => {
