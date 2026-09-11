@@ -107,7 +107,24 @@ function SocialIcon({
     <Link
       href={href}
       aria-label={label}
-      className="border-foreground/8 hover:border-foreground/15 focus-ring inline-flex h-11 w-11 items-center justify-center rounded-xl border bg-background text-foreground/70 transition-colors"
+      className={
+        border-white/10 // Borde sutil semitransparente
+        bg-background/60 // Fondo de la tarjeta con alfa (translúcido)
+        backdrop-blur-md // Desenfoque del fondo (efecto glassmorphism)
+        
+        shadow-inner shadow-white/5
+        
+        transition-all duration-300 ease-out
+        
+        hover:border-white/20 // Borde más brillante al hacer hover
+        hover:bg-background/80 // Fondo ligeramente más opaco
+        hover:backdrop-blur-lg // Aumentamos el desenfoque al hacer hover
+        
+        active:scale-95 // Pequeño efecto de presión al hacer clic
+        
+        inline-flex h-11 w-11 items-center justify-center rounded-2xl // Layout base (redondeado)
+        text-foreground/70 // Color del icono
+      }
       {...props}
     >
       {LucideIcon ? (
