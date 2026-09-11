@@ -1,65 +1,47 @@
 "use client";
 
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, BookOpen, FileText, Newspaper, Bookmark } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useState, type ReactNode } from "react";
 
+// 1. Definimos un mapa de iconos disponibles para las publicaciones
+const ICON_MAP = {
+  book: BookOpen,
+  file: FileText,
+  news: Newspaper,
+  bookmark: Bookmark,
+};
+
 type Entry = {
-  company: string;
+  company: string; // O puedes renombrarlo a publisher/title según prefieras
   role: string;
   period: string;
   slug?: string;
   brand?: string;
+  icon?: keyof typeof ICON_MAP; // Permite elegir una clave del mapa de arriba
 };
 
 const ENTRIES: Entry[] = [
   {
-    company: "Linear",
+    company: "Academic Journal",
+    role: "Peer-reviewed Research Paper",
+    period: "2025",
+    icon: "book", // <-- Aquí eliges explícitamente el icono
+    brand: "#3B82F6",
+  },
+  {
+    company: "Tech Publication",
+    role: "Guest Author & Articles",
+    period: "2024",
+    icon: "news", // <-- Otro icono distinto para este elemento
+    brand: "#10B981",
+  },
+  {
+    company: "Linear", // Si tiene slug, seguirá cargando el logo de Simple Icons
     role: "Senior Design Engineer",
     period: "Mar 2024 – Present",
     slug: "linear",
     brand: "#5E6AD2",
-  },
-  {
-    company: "Vercel",
-    role: "Product Designer",
-    period: "Aug 2022 – Feb 2024",
-    slug: "vercel",
-    brand: "#0a0a0a",
-  },
-  {
-    company: "Stripe",
-    role: "Design Engineer",
-    period: "Jun 2021 – Jul 2022",
-    slug: "stripe",
-    brand: "#635BFF",
-  },
-  {
-    company: "Figma",
-    role: "UI Engineer",
-    period: "Sep 2019 – May 2021",
-    slug: "figma",
-    brand: "#A259FF",
-  },
-  {
-    company: "Notion",
-    role: "Product Designer",
-    period: "Jan 2018 – Aug 2019",
-    slug: "notion",
-    brand: "#111111",
-  },
-  {
-    company: "Airbnb",
-    role: "Design Intern",
-    period: "May 2017 – Dec 2017",
-    slug: "airbnb",
-    brand: "#FF5A5F",
-  },
-  {
-    company: "Freelance",
-    role: "Designer & Developer",
-    period: "2015 – 2017",
-    brand: "#0AE448",
   },
 ];
 
@@ -167,7 +149,9 @@ export function Publics(): ReactNode {
 }
 
 function CompanyLogo({ entry }: { entry: Entry }): ReactNode {
-  const initials = entry.company.charAt(0);
+  // Buscamos si el entry tiene un icono asignado en el mapa, o usamos uno por defecto (ej. BookOpen)
+  const SelectedIcon = entry.icon && ICON_MAP[entry.icon] ? ICON_MAP[entry.icon] : BookOpen;
+
   return (
     <span
       className="ring-foreground/8 inline-flex h-12 w-12 shrink-0 items-center justify-center bg-white ring-1 dark:ring-white/10"
@@ -187,9 +171,8 @@ function CompanyLogo({ entry }: { entry: Entry }): ReactNode {
           draggable={false}
         />
       ) : (
-        <span className="text-[18px] font-semibold tracking-tight text-white">
-          {initials}
-        </span>
+        // Renderiza dinámicamente el icono que elegiste en la data
+        <SelectedIcon className="h-6 w-6 stroke-[2] text-white" />
       )}
     </span>
   );
