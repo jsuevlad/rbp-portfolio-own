@@ -31,7 +31,7 @@ export default function AboutPage(): ReactNode {
                 As my work moved from digital communication into design, I became increasingly interested in <strong className="font-semibold text-foreground">the relationship between people, ideas, and the things we build.</strong> That perspective shaped my approach to design — one that balances visual craft, clarity, functionality, and the human experience behind every interaction.
               </p>
               <p>
-                Today, <strong className="font-semibold text-foreground">I’m drawn to projects where design, technology, and ideas can come together.</strong>, I&rsquo;m always looking for opportunities to <strong className="font-semibold text-foreground">shape thoughtful experiences, explore new possibilities, and turn ambitious ideas into something tangible</strong>.
+                Today, <strong className="font-semibold text-foreground">I'm drawn to initiatives that push boundaries and challenge status quos.</strong> I&rsquo;m always looking for opportunities to <strong className="font-semibold text-foreground">shape thoughtful experiences, explore new possibilities, and turn ambitious ideas into something tangible</strong>.
               </p>
             </div>
           </div>
