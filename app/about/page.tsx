@@ -21,7 +21,7 @@ export default function AboutPage(): ReactNode {
         <FadeIn delay={0.5}>
           <div className="rounded-4xl border border-foreground/5 bg-foreground/1.5 p-8 sm:p-12 dark:bg-foreground/3">
             <h1 className="font-serif text-[1.75rem] font-medium tracking-tight text-foreground sm:text-[2rem]">
-              Hello! I&rsquo;m <span className="border-b border-foreground/30 pb-0.5">Josh Mercer</span>.
+              Hello, I&rsquo;m <span className="border-b border-foreground/30 pb-0.5">Idah Jules.</span>.
             </h1>
             <div className="mt-8 space-y-6 text-[17px] leading-[1.7] tracking-tight text-foreground/75 sm:text-[18px]">
               <p>
@@ -31,7 +31,7 @@ export default function AboutPage(): ReactNode {
                 As my work moved from digital communication into design, I became increasingly interested in <strong className="font-semibold text-foreground">the relationship between people, ideas, and the things we build.</strong> That perspective shaped my approach to design — one that balances visual craft, clarity, functionality, and the human experience behind every interaction.
               </p>
               <p>
-                Currently leading design at small product teams shipping software for <strong className="font-semibold text-foreground">creative professionals</strong>, I&rsquo;m always looking for opportunities to <strong className="font-semibold text-foreground">shape thoughtful interfaces and build scalable design systems</strong>.
+                Today, <strong className="font-semibold text-foreground">I’m drawn to projects where design, technology, and ideas can come together.</strong>, I&rsquo;m always looking for opportunities to <strong className="font-semibold text-foreground">shape thoughtful experiences, explore new possibilities, and turn ambitious ideas into something tangible</strong>.
               </p>
             </div>
           </div>
