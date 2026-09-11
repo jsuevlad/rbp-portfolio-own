@@ -1,7 +1,7 @@
-import { Nav } from "@/profile/layout/nav";
-import { PageBackdrop } from "@/profile/layout/page-backdrop";
-import { Providers } from "@/profile/layout/providers";
-import { SkipToContent } from "@/profile/layout/skip-to-content";
+import { Nav } from "@/components/layout/nav";
+import { PageBackdrop } from "@/components/layout/page-backdrop";
+import { Providers } from "@/components/layout/providers";
+import { SkipToContent } from "@/components/layout/skip-to-content";
 import { baseMetadata } from "@/lib/metadata";
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Geist, Geist_Mono } from "next/font/google";
