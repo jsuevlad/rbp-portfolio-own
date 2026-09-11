@@ -28,7 +28,7 @@ export default function AboutPage(): ReactNode {
                 I work where <strong className="font-semibold text-foreground">design, technology, and ideas meet.</strong> My journey began in <strong className="font-semibold text-foreground">digital communication,</strong> eventually expanding into <strong className="font-semibold text-foreground">visual design, digital experiences, and creative problem-solving</strong> — bringing together curiosity, experimentation, and technical execution in every project.
               </p>
               <p>
-                My journey into design began when I realized how often good user experience was missing from powerful tools. That led me to embrace <strong className="font-semibold text-foreground">user-centered design</strong> as both a mindset and a craft, one that balances clarity, creativity, and functionality.
+                As my work moved from digital communication into design, I became increasingly interested in <strong className="font-semibold text-foreground">the relationship between people, ideas, and the things we build.</strong> That perspective shaped my approach to design — one that balances visual craft, clarity, functionality, and the human experience behind every interaction.
               </p>
               <p>
                 Currently leading design at small product teams shipping software for <strong className="font-semibold text-foreground">creative professionals</strong>, I&rsquo;m always looking for opportunities to <strong className="font-semibold text-foreground">shape thoughtful interfaces and build scalable design systems</strong>.
