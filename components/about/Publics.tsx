@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronDown, BookOpen, FileText, Newspaper, Bookmark } from "lucide-react";
+import { ChevronDown, BookOpen, FileText, Newspaper, Bookmark, Trophy, MicVocal, Presentation, Lightbulb, BrainCircuit } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useState, type ReactNode } from "react";
 
@@ -10,6 +10,11 @@ const ICON_MAP = {
   file: FileText,
   news: Newspaper,
   bookmark: Bookmark,
+  trophy: Trophy,
+  mic: MicVocal,
+  press: Presentation,
+  idea: Lightbulb,
+  invest: BrainCircuit,
 };
 
 type Entry = {
@@ -60,7 +65,7 @@ export function Publics(): ReactNode {
   return (
     <div className="flex flex-col gap-3">
       <h3 className="text-foreground text-[15px] font-semibold tracking-tight">
-        Publications
+        What I've Made:
       </h3>
       <div
         className={`border-foreground/5 bg-foreground/2 dark:bg-foreground/5 relative overflow-hidden rounded-4xl border px-2 pt-2 sm:px-4 sm:pt-4 ${
