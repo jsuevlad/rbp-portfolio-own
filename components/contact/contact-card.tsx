@@ -1,4 +1,3 @@
-import { Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
@@ -16,17 +15,7 @@ export function ContactCard(): ReactNode {
       <FadeIn>
         <div className="relative w-full overflow-hidden rounded-4xl border border-foreground/8 bg-background p-1.5 shadow-sm">
           <div className="relative w-full overflow-hidden rounded-[1.6rem]">
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute inset-0 opacity-45 dark:opacity-25"
-              style={{
-                WebkitMaskImage: CARD_FADE_MASK,
-                maskImage: CARD_FADE_MASK,
-              }}
-            >
-              <ShaderFlow scale={3} brightness={3}/>
-            </div>
-
+        
             <div className="relative grid gap-8 p-6 sm:gap-10 sm:p-7 md:grid-cols-[1.2fr_1fr] md:items-stretch md:gap-6 md:p-6">
               <div className="flex flex-col gap-5">
                 <h2 className="font-serif text-[2.25rem] font-medium leading-[1.05] tracking-tight text-foreground sm:text-[2.75rem] lg:text-[3.25rem]">
@@ -54,26 +43,31 @@ export function ContactCard(): ReactNode {
                 <div className="relative flex items-center gap-3 opacity-75 z-10">
                   <SocialIcon
                     href="mailto:hello@example.com"
-                    label="Email"
-                    lucideIcon={Mail}
+                    label="E-mail"
+                    imageSrc="/gmail.svg"
                   />
                   <SocialIcon
-                    href="https://www.linkedin.com"
-                    label="LinkedIn"
-                    imageSrc="/linkedin.svg"
+                    href="https://t.me/julesolenne"
+                    label="Telegram"
+                    imageSrc="/telegram.svg"
                   />
                   <SocialIcon
-                    href="https://x.com"
-                    label="X"
-                    imageSrc="/x.svg"
+                    href="https://www.instagram.com/julesolenne/"
+                    label="Instagram"
+                    imageSrc="/instagram.svg"
+                  />
+                  <SocialIcon
+                    href="https://github.com/julesolenne/"
+                    label="GitHub"
+                    imageSrc="/github.svg"
                   />
                 </div>
                 <div className="relative flex flex-col items-center gap-1 text-center z-10">
                   <p className="text-[13px] tracking-tight text-foreground/70">
-                    2026 &copy; All rights reserved. 
+                    Elsewhere. One click away.
                   </p>
                   <p className="text-[12px] tracking-tight text-foreground/45">
-                    By Jules Hidde.
+                    &copy; Jules Hidde.
                   </p>
                 </div>
               </div>
@@ -88,12 +82,10 @@ export function ContactCard(): ReactNode {
 function SocialIcon({
   href,
   label,
-  lucideIcon: LucideIcon,
   imageSrc,
 }: {
   href: string;
   label: string;
-  lucideIcon?: React.ComponentType<{ className?: string; strokeWidth?: number }>;
   imageSrc?: string;
 }): ReactNode {
   const isExternal = href.startsWith("http");
@@ -107,9 +99,7 @@ function SocialIcon({
       className= "border-white/10 bg-background/60 backdrop-blur-md shadow-inner transition-all duration-300 ease-out hover:border-white/20 hover:bg-background/80 active:scale-95 inline-flex h-11 w-11 items-center justify-center rounded-2xl text-foreground/70"
       {...props}
     >
-      {LucideIcon ? (
-        <LucideIcon className="h-4 w-4" strokeWidth={2.5} aria-hidden="true" />
-      ) : imageSrc ? (
+      {imageSrc ? (
         <Image
           src={imageSrc}
           alt=""

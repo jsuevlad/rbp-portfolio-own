@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "motion/react";
-import { Check, Copy, Mail } from "lucide-react";
+import { CircleCheckBig, Copy, BriefcaseBusiness } from "lucide-react";
 import { useState } from "react";
 import type { ReactNode } from "react";
 
@@ -12,7 +12,14 @@ export function ContactButton(): ReactNode {
   const [open, setOpen] = useState(false);
   const [copied, setCopied] = useState(false);
 
-  const handleCopy = async (): Promise<void> => {
+  const handleCopy = async (e: React.MouseEvent): Promise<void> => {
+     // Si no está abierto, el primer toque solo expande el componente
+    if (!open) {
+      setOpen(true);
+      return;
+    }
+    // Si ya está abierto, copia el correo al portapapeles
+    e.stopPropagation();
     try {
       await navigator.clipboard.writeText(EMAIL);
       setCopied(true);
@@ -40,10 +47,8 @@ export function ContactButton(): ReactNode {
       onClick={handleCopy}
       onHoverStart={() => setOpen(true)}
       onHoverEnd={() => setOpen(false)}
-      onFocus={() => setOpen(true)}
-      onBlur={() => setOpen(false)}
       aria-label={
-        copied ? "Email copied" : open ? `Copy ${EMAIL}` : "Show email"
+        copied ? "E-mail copied" : open ? `Copy ${EMAIL}` : "Show email"
       }
       transition={{ layout: { duration: 0.55, ease: EASE } }}
       style={{ borderRadius: 12 }}
@@ -75,7 +80,7 @@ export function ContactButton(): ReactNode {
                       transition={{ duration: 0.2, ease: EASE }}
                       className="inline-flex"
                     >
-                      <Check className="h-4 w-4" aria-hidden="true" />
+                      <CircleCheckBig className="h-4 w-4" aria-hidden="true" />
                     </motion.span>
                   ) : (
                     <motion.span
@@ -103,8 +108,8 @@ export function ContactButton(): ReactNode {
               transition={{ duration: 0.35, ease: EASE }}
               className="inline-flex items-center gap-2 whitespace-nowrap"
             >
-              <Mail className="h-4 w-4 shrink-0" aria-hidden="true" />
-              <span>Contact</span>
+              <BriefcaseBusiness className="h-4 w-4 shrink-0" aria-hidden="true" />
+              <span>Work With Me</span>
             </motion.span>
           )}
         </AnimatePresence>

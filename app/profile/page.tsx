@@ -9,12 +9,12 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = createMetadata({
-  title: "About",
+  title: "Profile",
   description: "About me, background, and how to get in touch.",
-  path: "/about",
+  path: "/profile",
 });
 
-export default function AboutPage(): ReactNode {
+export default function ProfilePage(): ReactNode {
   return (
     <main id="main-content" className="flex flex-1 flex-col">
       <section className="mx-auto w-full max-w-160 px-6 pt-20 pb-16 sm:px-10 sm:pt-28 sm:pb-24">
