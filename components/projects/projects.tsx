@@ -1,7 +1,7 @@
 import {
   FolderKanban,
   FileStack,
-  Galaxy,
+  Goal,
   BrainCircuit,
   ArrowRight,
 } from "lucide-react";
@@ -56,7 +56,7 @@ const PROJECTS: Project[] = [
   },
   {
     id: "insulso",
-    icon: Galaxy,
+    icon: Goal,
     iconLabel: "Insulso",
     title: "Complexity, deliberately designed.",
     description: "A startup concept built around turning ambitious ideas into thoughtful digital products, combining design, technology, and strategy from the ground up.",
