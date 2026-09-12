@@ -25,13 +25,13 @@ export default function ProfilePage(): ReactNode {
             </h1>
             <div className="mt-8 space-y-6 text-[17px] leading-[1.7] tracking-tight text-foreground/75 sm:text-[18px]">
               <p>
-                I work where <strong className="font-semibold text-foreground">design, technology, and ideas meet</strong>.
+                I work where <strong className="font-semibold text-foreground">design, technology, and ideas meet.</strong> My journey began in <strong className="font-semibold text-foreground">digital communication,</strong> eventually expanding into <strong className="font-semibold text-foreground">visual design, digital experiences, and creative problem-solving</strong> — bringing together curiosity, experimentation, and technical execution in every project.
               </p>
               <p>
-                As my work moved from digital communication into design, I became increasingly interested in.
+                As my work moved from digital communication into design, I became increasingly interested in <strong className="font-semibold text-foreground">the relationship between people, ideas, and the things we build.</strong> That perspective shaped my approach to design — one that balances visual craft, clarity, functionality, and the human experience behind every interaction.
               </p>
               <p>
-                Today,
+                Today, <strong className="font-semibold text-foreground">I'm drawn to initiatives that push boundaries and challenge status quos.</strong> I&rsquo;m always looking for opportunities to <strong className="font-semibold text-foreground">shape thoughtful experiences, explore new possibilities, and turn ambitious ideas into something tangible</strong>.
               </p>
             </div>
           </div>
