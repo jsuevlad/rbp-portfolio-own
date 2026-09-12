@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const siteConfig = {
-  name: "I. Jules S. | Designer & Builder",
+  name: "I. Jules S.",
   description:
     "An independent designer building thoughtful products, systems, and experiments across design and technology.",
   url: "https://aglr.xyz",
