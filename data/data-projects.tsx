@@ -18,10 +18,9 @@ type Project = {
   title: string;
   description: string;
   meta: string;
-  imageRatio: number;
+  imageRatio:string;
   image: string;
   imageAlt: string;
-  // Añadimos las propiedades del contenido para que TypeScript no se queje:
   overview?: string;
   challenge?: string;
   solution?: string;
